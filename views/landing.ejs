@@ -1,0 +1,710 @@
+<%- include('partials/header'); -%>
+	<body>
+        <div id="preloader" class="preloader">
+            <div class="pre_preloader">
+                <img class="preloader__image" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/logo.png"/>
+                <svg class="preloader__image_2" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="250px" height="250px" viewBox="0 0 128 128" xml:space="preserve"><g><path d="M64 0a7 7 0 1 1-7 7 7 7 0 0 1 7-7zm29.86 12.2a2.8 2.8 0 1 1-3.83 1.02 2.8 2.8 0 0 1 3.83-1.02zm22.16 21.68a3.15 3.15 0 1 1-4.3-1.15 3.15 3.15 0 0 1 4.3 1.15zm.87 60.53a4.2 4.2 0 1 1-1.57-5.7 4.2 4.2 0 0 1 1.54 5.73zm7.8-30.5a3.85 3.85 0 1 1-3.85-3.85 3.85 3.85 0 0 1 3.85 3.84zm-30 53.2a4.55 4.55 0 1 1 1.66-6.23 4.55 4.55 0 0 1-1.67 6.22zM64 125.9a4.9 4.9 0 1 1 4.9-4.9 4.9 4.9 0 0 1-4.9 4.9zm-31.06-8.22a5.25 5.25 0 1 1 7.17-1.93 5.25 5.25 0 0 1-7.14 1.93zM9.9 95.1a5.6 5.6 0 1 1 7.65 2.06A5.6 5.6 0 0 1 9.9 95.1zM1.18 63.9a5.95 5.95 0 1 1 5.95 5.94 5.95 5.95 0 0 1-5.96-5.94zm8.1-31.6a6.3 6.3 0 1 1 2.32 8.6 6.3 6.3 0 0 1-2.3-8.6zM32.25 8.87a6.65 6.65 0 1 1-2.44 9.1 6.65 6.65 0 0 1 2.46-9.1z" fill="#ffffff" fill-opacity="1"/><animateTransform attributeName="transform" type="rotate" values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64" calcMode="discrete" dur="1320ms" repeatCount="indefinite"></animateTransform></g></svg>
+            </div>
+        </div>
+        <div class="container preloader hide-preloader" id="loader">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="loader-wrapper">
+                        <div class="loading loading-1"></div>
+                        <p class="preloader-message">Wait, loading.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="header">
+            <header class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <ul class="header-menu">
+                                <!-- <li><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/phone.png">+7-958-111-1440</li> -->
+                                <li><a href="/cdn-cgi/l/email-protection#c4b7b1b4b4abb6b084a6abbcadaab2a1b7b0adaaa3eaa7aba9"><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/mail.svg" class="top-icons"><span class="__cf_email__" data-cfemail="17646267677865635775786f7e79617264637e79703974787a">[email&#160;protected]</span></a></li>
+                                <li><a href="/en/about/contacts/"><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/contacts.svg" class="top-icons"> Contacts</a></li>
+                                <li><a href="/en/support/"><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/headset.svg" class="top-icons">Support</a></li>
+                                <li><a href="https://boxinvesting.sirixtrader.com/" target="_blank"><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/sirix.png">Web-platform</a></li>
+                            </ul>
+                            <!--       <ul class="header-support">
+
+                                </ul> -->
+                        </div>
+                        <div class="col-lg-4 text-right">
+                            <nav class="auth-menu">
+                                
+                                <a href="/login/">Sign In</a>
+                                <a href="/register/">Sign Up</a>
+                                
+                            </nav>
+                        </div>
+                    </div>
+            </header>
+            <div class="desc-menu">
+                <div class="container">
+                    <nav class="main-nav">
+
+                        <div class="logo-holder nav1">
+                            <a href="/"><img alt="logo" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/logo.png"></a>
+                        </div>
+                        <ul class="text-right nav1">
+                            <li><a href="/">Home</a></li>
+                            <li><a id="trd" href="/tradingways">Trading ways</a>
+                                <ul>
+                                    <div class="container">
+                                        <div>
+                                            <li><a href="/en/trading-methods/copytrade/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/copy_trades.svg">CopyProfit</a></li>
+											<li><a href="/en/trading-methods/robotrading/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/robotrading.svg">Automated Trading</a></li>
+                                        </div>
+                                        <div>
+                                            <li><a href="/en/trading-methods/personal-analyst/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/personal_analitic.svg">Personal analyst</a></li>
+                                            <li><a href="/en/trading-methods/selftrading/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/self_trade.svg">Self-trading</a></li>
+                                        </div>
+                                        <div>
+                                            <li><a href="/en/trading-methods/account-types/"><img alt="portfolio" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/account_types.svg">Types of accounts</a></li>
+                                            <li><a href="/en/trading-methods/mam-account/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/pamm.svg">MAM Account</a></li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li><a id="depsts" href="/deposits/">Deposits/Investments</a>
+                                <ul>
+                                    <div class="container">
+                                        <div>
+                                             <li><a href="/en/deposits/futures-indexes/"><img alt="futures" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/futeres.svg">Index futures</a></li>
+
+                                            <li><a href="/en/deposits/fx/"><img alt="forex" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/forex.svg">Forex</a></li>
+                                        </div>
+
+                                        <div>
+                                            <!-- <li><a href=""><img alt="ipo" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/ipo.svg">IPO</a></li> -->
+                                        </div>
+                                        <div>
+
+                                            <!-- <li><a href=""><img alt="portfolio" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/invet_portfolio.svg">Investment portfolio</a></li> -->
+
+                                            <li><a href="/en/deposits/bitcoin/"><img alt="portfolio" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/bitcoin.svg">Investment in Bitcoin</a></li>
+                                            <li><a href="/en/deposits/cfd/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/cfd.svg">CFD</a></li>
+                                        </div>
+                                        <div>
+                                            <li><a href="/en/deposits/cm/"><img alt="cm" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/cm.svg">CM</a></li>
+                                            <!-- <li><a href=""><img alt="portfolio" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/mining.svg">Cloud Mining</a></li> -->
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li><a id="abt" href="/about/">About</a></li>
+                            <li><a id="htstrt" href="/how-to-start/">Get started</a></li>
+                            <li><a id="frtrdrs" href="/for-traders/">Available CM tools</a>
+                                <ul>
+                                    <div class="container">
+                                        <div>
+                                            <li><a href="/en/for-traders/interest-rates/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/bank_percents.svg">World Interest Rates</a></li>
+                                            <li><a href="/en/for-traders/signals/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/signals.svg">Trading signals</a></li>
+                                        </div>
+                                        <div>
+                                            <li><a href="/en/for-traders/calendar/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/calendar.svg">Economic calendar</a></li>
+                                            <li><a href="/en/for-traders/calculators/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/calculator.svg">Trading calculators</a></li>
+                                        </div>
+                                        <div>
+                                            <li><a href="/en/for-traders/bloomberg-online/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/bloomberg.svg">Bloomberg online</a></li>
+                                            <li><a href="/en/for-traders/forextv/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/forex_tv.svg">Forex TV</a></li>
+
+                                        </div>
+                                        <div>
+                                            <li><a href="/en/for-traders/kyc/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/verification.svg">KYC</a></li>
+                                            <li><a href="/en/for-traders/faq/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/faq.svg">FAQ</a></li>
+                                        </div>
+                                        <div>
+                                            <li><a href="/en/for-traders/platforms/"> <img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/platforms.svg">Trading platforms</a></li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <form id="lang-form" action="/i18n/setlang/" method="post">
+                                    <input type='hidden' name='csrfmiddlewaretoken' value='fILzxLI8wv9PyXAxFjsZR5DKKBQLK2SsLyBjqdiAbPNkUBalOdVjZj07LrhRzQfd' />
+                                    <select name="language" id="language" class="" hidden>
+                                        
+                                        [(&#39;en&#39;, &#39;English&#39;), (&#39;ru&#39;, &#39;Russian&#39;), (&#39;de&#39;, &#39;Germany&#39;), (&#39;it&#39;, &#39;Italy&#39;), (&#39;ar&#39;, &#39;Arabic&#39;), (&#39;pt&#39;, &#39;Portugal&#39;), (&#39;es&#39;, &#39;Spain&#39;), (&#39;fr&#39;, &#39;France&#39;)]
+                                        
+                                        <option value="en"
+                                                selected="selected">
+                                        English
+                                        </option>
+                                        
+                                        <option value="ru"
+                                                >
+                                        Русский
+                                        </option>
+                                        
+                                        <option value="de"
+                                                >
+                                        Deutsch
+                                        </option>
+                                        
+                                        <option value="it"
+                                                >
+                                        italiano
+                                        </option>
+                                        
+                                        <option value="ar"
+                                                >
+                                        العربيّة
+                                        </option>
+                                        
+                                        <option value="pt"
+                                                >
+                                        Português
+                                        </option>
+                                        
+                                        <option value="es"
+                                                >
+                                        español
+                                        </option>
+                                        
+                                        <option value="fr"
+                                                >
+                                        français
+                                        </option>
+                                        
+                                    </select>
+                                </form>
+                                <div class="dropdown language-menu">
+                                    
+                                    <a id="lang" href="#" data-toggle="dropdown">
+                                        
+                                        En
+                                        <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/gb-round.png">
+                                        
+                                    </a>
+                                    <ul id='lang-menu' class="dropdown-menu pull-right text-center" aria-labelledby="dLabel">
+                                        <li  class="highlighted"><button value="en" class="btn btn-sm">
+                                                En
+                                                <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/gb-round.png">
+                                            </button></li>
+                                            <li ><button value="ru" class="btn btn-sm">
+                                                    Ru
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/ru-round.png">
+                                                </button></li>
+                                            <li ><button value="de" class="btn btn-sm">
+                                                    De
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/german.png">
+                                                </button></li>
+                                            <li ><button value="it" class="btn btn-sm">
+                                                    It
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/italy.png">
+                                                </button></li>
+                                            <li ><button value="ar" class="btn btn-sm">
+                                                    Ar
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/arab.png">
+                                                </button></li>
+                                            <li ><button value="pt" class="btn btn-sm">
+                                                    Pt
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/pt-round.png">
+                                                </button></li>
+                                            <li ><button value="es" class="btn btn-sm">
+                                                    Es
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/spain.png">
+                                                </button></li>
+                                            <li ><button value="fr" class="btn btn-sm">
+                                                    Fr
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/france.png">
+                                                </button></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="navbar-credo navbar navbar-inverse bs-navbar">
+                        <div class="container-fluid">
+
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <div class="dropdown language-menu">
+                                    
+                                    <a id="lang" href="#" data-toggle="dropdown">
+                                        
+                                        En
+                                        <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/gb-round.png">
+                                        
+                                    </a>
+                                    <ul id='lang-menu' class="dropdown-menu pull-right text-center" aria-labelledby="dLabel">
+                                        <li  class="highlighted"><button value="en" class="btn btn-sm">
+                                                En
+                                                <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/gb-round.png">
+                                            </button></li>
+                                            <li ><button value="ru" class="btn btn-sm">
+                                                    Ru
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/ru-round.png">
+                                                </button></li>
+                                            <li ><button value="de" class="btn btn-sm">
+                                                    De
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/german.png">
+                                                </button></li>
+                                            <li ><button value="it" class="btn btn-sm">
+                                                    It
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/italy.png">
+                                                </button></li>
+                                            <li ><button value="ar" class="btn btn-sm">
+                                                    Ar
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/arab.png">
+                                                </button></li>
+                                            <li ><button value="pt" class="btn btn-sm">
+                                                    Pt
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/pt-round.png">
+                                                </button></li>
+                                            <li ><button value="es" class="btn btn-sm">
+                                                    Es
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/spain.png">
+                                                </button></li>
+                                            <li ><button value="fr" class="btn btn-sm">
+                                                    Fr
+                                                    <img class="lang-flag" alt="flag" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/langs/france.png">
+                                                </button></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-bs" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo-holder">
+                                    <a href="/en/"><img alt="logo" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/logo.png"></a>
+                                </div>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-bs">
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a id="mainpage" href="/en/" >Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="trd">Trading ways<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/en/trading-methods/mam-account/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/pamm.svg"> MAM Account</a></li>
+                                            <li><a href="/en/trading-methods/copytrade/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/copy_trades.svg"> CopyProfit</a></li>
+                                            <li><a href="/en/trading-methods/robotrading/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/robotrading.svg"> Automated Trading Systems</a></li>
+                                            <li><a href="/en/trading-methods/personal-analyst/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/personal_analitic.svg"> Personal analyst</a></li>
+                                            <li><a href="/en/trading-methods/selftrading/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/trading-metod/self_trade.svg"> Self-trading</a></li>
+                                            <li><a href="/en/trading-methods/account-types/"><img alt="portfolio" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/account_types.svg"> Types of accounts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a id="depsts" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Deposits/Investments<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/en/deposits/cfd/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/cfd.svg"> CFD</a></li>
+                                            <li><a href="/en/deposits/fx/"><img alt="forex" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/forex.svg"> Forex</a></li>
+                                            <li><a href="/en/deposits/cm/"><img alt="cm" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/cm.svg"> CM</a></li>
+                                            <!-- <li><a href=""><img alt="ipo" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/ipo.svg"> IPO</a></li> -->
+                                            <!-- <li><a href=""><img alt="portfolio" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/invet_portfolio.svg"> Investment portfolio</a></li> -->
+                                            <li><a href="/en/deposits/futures-indexes/"><img alt="futures" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/futeres.svg"> Index futures</a></li>
+                                            <li><a href="/en/deposits/bitcoin/"><img alt="portfolio" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/bitcoin.svg"> Investment in Bitcoin</a></li>
+                                            <!-- <li><a href=""><img alt="portfolio" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/deposits/mining.svg"> Cloud Mining</a></li> -->
+                                        </ul>
+                                    </li>
+                                    <li><a id="abt" href="/about/">About</a></li>
+                                    <li><a id="htstrt" href="/how-to-start/">Get started</a></li>
+                                    <li class="dropdown">
+                                        <a id="frtrdrs" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trading Tools<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/en/for-traders/interest-rates/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/bank_percents.svg"> World Interest Rates</a></li>
+                                            <li><a href="/en/for-traders/calendar/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/calendar.svg"> Economic calendar</a></li>
+                                            <li><a href="/en/for-traders/calculators/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/calculator.svg"> Trading calculators</a></li>
+                                            <li><a href="/en/for-traders/bloomberg-online/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/bloomberg.svg"> Bloomberg online</a></li>
+                                            <li><a href="/en/for-traders/forextv/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/forex_tv.svg"> Forex TV</a></li>
+                                            <li><a href="/en/for-traders/kyc/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/verification.svg"> KYC</a></li>
+                                            <li><a href="/en/for-traders/faq/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/faq.svg"> FAQ</a></li>
+                                            <li><a href="/en/for-traders/platforms/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/platforms.svg"> Trading platforms</a></li>
+                                            <li><a href="/en/for-traders/signals/"><img alt="cfd" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/menu_icons_mobile/for-traders/signals.svg"> Trading signals</a></li>
+                                        </ul>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href=""><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/mail.png"> <span class="__cf_email__" data-cfemail="7d0e080d0d120f093d1f120514130b180e0914131a531e1210">[email&#160;protected]</span></a></li>
+                                    <li><a href=""><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/message.png"> Chat</a></li>
+                                    <li><a href="/en/support/"><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/headset.png"> Support</a></li>
+                                    <li><a href=""><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/sirix.png"> Web-platform</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/login/">Sign In</a></li>
+                                    <li><a href="/register/">Sign Up</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div>
+                    </nav>
+                </div>
+
+
+            </div>
+
+        </section>
+        
+
+<div class="section">
+  <section class="slide-one">
+<!--   <div class="container">
+	    <div class="slide-content">
+	        <p class="slide-title">
+	        	<span>+76&#37;</span><br> The precious metals portfolio’s <br>profit in this year
+	        </p>
+	        <a class="slide-button" href="/en/accounts/signup/">Invest</a>
+	    </div>
+    </div> -->
+    <div class="tp-banner-container">
+      <div class="tp-banner" >
+        <ul>
+
+          <!-- SLIDE  -->
+          <!-- <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+            MAIN IMAGE
+            <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/landing/bitcoin.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+            LAYERS
+            LAYER NR. 1
+            <div class="tp-caption title skewfromrightshort fadeout"
+            data-x="20"
+            data-y="100"
+            data-speed="500"
+            data-start="1200"
+            data-easing="Power4.easeOut">Buy <br> Bitcoin
+                  </div>
+                  LAYERS
+                  LAYER NR. 2
+                  <div class="tp-caption subtitle skewfromrightshort fadeout"
+                  data-x="20"
+                  data-y="300"
+                  data-speed="500"
+                  data-start="1600"
+                  data-easing="Power4.easeOut">со скидкой 10%
+              </div>
+              LAYERS
+              LAYER NR. 3
+              <div class="tp-caption subtitle skewfromrightshort fadeout"
+              data-x="20"
+              data-y="350"
+              data-speed="500"
+              data-start="1800"
+              data-easing="Power4.easeOut">
+              <a class="slide-button" href="/en/accounts/signup/">Invest</a>
+          </div>
+        </li> -->
+
+        <!-- SLIDE  -->
+        <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+          <!-- MAIN IMAGE -->
+          <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/landing/reliable_broker.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+          <!-- LAYERS -->
+          <!-- LAYER NR. 1 -->
+          <div class="tp-caption title skewfromrightshort fadeout"
+          data-x="20"
+          data-y="100"
+          data-speed="500"
+          data-start="1200"
+		  data-easing="Power4.easeOut">Protect your <br> profit
+        </div>
+        <!-- LAYERS -->
+        <!-- LAYER NR. 2 -->
+        <div class="tp-caption subtitle skewfromrightshort fadeout"
+        data-x="20"
+        data-y="300"
+        data-speed="500"
+        data-start="1600"
+        data-easing="Power4.easeOut">with a reliable brokerage company
+      </div>
+      <!-- LAYERS -->
+      <!-- LAYER NR. 3 -->
+      <div class="tp-caption subtitle skewfromrightshort fadeout"
+      data-x="20"
+      data-y="350"
+      data-speed="500"
+      data-start="1800"
+      data-easing="Power4.easeOut">
+      <a class="slide-button" href="/register">Invest</a>
+    </div>
+  </li>
+
+  <!-- SLIDE  -->
+  <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+    <!-- MAIN IMAGE -->
+    <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/landing/bonus.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+    <!-- LAYERS -->
+    <!-- LAYER NR. 1 -->
+    <div class="tp-caption title skewfromrightshort fadeout"
+    data-x="20"
+    data-y="100"
+    data-speed="500"
+    data-start="1200"
+    data-easing="Power4.easeOut">Get bonus <br> up to 47%
+  </div>
+  <!-- LAYERS -->
+  <!-- LAYER NR. 2 -->
+  <div class="tp-caption subtitle skewfromrightshort fadeout"
+  data-x="20"
+  data-y="300"
+  data-speed="500"
+  data-start="1600"
+  data-easing="Power4.easeOut">on your account for the first deposit
+</div>
+<!-- LAYERS -->
+<!-- LAYER NR. 3 -->
+<div class="tp-caption subtitle skewfromrightshort fadeout"
+data-x="20"
+data-y="350"
+data-speed="500"
+data-start="1800"
+data-easing="Power4.easeOut">
+<a class="slide-button" href="/en/accounts/signup/">Invest</a>
+</div>
+</li> 
+
+<!-- SLIDE  -->
+<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+  <!-- MAIN IMAGE -->
+  <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/landing/robot.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+  <!-- LAYERS -->
+  <!-- LAYER NR. 1 -->
+  <div class="tp-caption title skewfromrightshort fadeout"
+  data-x="20"
+  data-y="100"
+  data-speed="500"
+  data-start="1200"
+  data-easing="Power4.easeOut">Use automated <br> robots
+</div>
+<!-- LAYERS -->
+<!-- LAYER NR. 2 -->
+<div class="tp-caption subtitle skewfromrightshort fadeout"
+data-x="20"
+data-y="300"
+data-speed="500"
+data-start="1600"
+data-easing="Power4.easeOut">for successful trading
+</div>
+<!-- LAYERS -->
+<!-- LAYER NR. 3 -->
+<div class="tp-caption subtitle skewfromrightshort fadeout"
+data-x="20"
+data-y="350"
+data-speed="500"
+data-start="1800"
+data-easing="Power4.easeOut">
+<a class="slide-button" href="/en/accounts/signup/">Invest</a>
+</div>
+</li>
+
+
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div class="container pamm-tab-container">
+  <section class="land-sec1">
+      <h2 class="land-sec1_title">Investment opportunities</h2>
+      
+
+
+<div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'robotrading')" id="defaultOpen" >Automated Trading</button>
+        <button class="tablinks" onclick="openCity(event, 'selftrading')">Self-trading</button>
+        <button class="tablinks" onclick="openCity(event, 'copytrading')">CopyProfit</button>
+        <button class="tablinks" onclick="openCity(event, 'pamm')">MAM Account</button>
+        <button class="tablinks" onclick="openCity(event, 'trustmanagment')">Trust management</button>
+        <button class="tablinks" onclick="openCity(event, 'demo')"> Free Trial Account</button>
+    </div>
+</div>
+<div id="robotrading" class="tabcontent">
+    <div class="animated fadeInRight">
+        <div class="tab-img">
+            <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/1.jpg">
+        </div>
+        <h3 class="tab-title">Automated Trading Systems</h3>
+        <p class="tab-desc">Automated Trading Systems (trading by robots) is a way with the use of proprietary BoxInvesting software to conclude trade transactions. Specially programmed trading systems independently calculate the trend, determine its direction and strength of price movement.</p>
+        <div class="tab-link">
+            <a class="link after" href="/en/trading-methods/robotrading/">Get now</a>
+        </div>
+    </div>
+</div>
+<div id="selftrading" class="tabcontent">
+    <div class="animated fadeInRight">
+        <div class="tab-img">
+            <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/self_trade.jpg">
+        </div>
+        <h3 class="tab-title">Self-trading</h3>
+        <p class="tab-desc">Independent self-trading is a service that guarantees the exact execution of orders for buy and sale of financial assets in any of the accessible trading terminals. In this situation, the trader makes decisions based on personal experience and knowledges.</p>
+        <div class="tab-link">
+            <a class="link after" href="/en/trading-methods/selftrading/">Get now</a>
+        </div>
+    </div>
+</div>
+<div id="copytrading" class="tabcontent">
+    <div class="animated fadeInRight">
+        <div class="tab-img">
+            <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/social.jpg">
+        </div>
+        <h3 class="tab-title">CopyProfit</h3>
+        <p class="tab-desc">Repetition or copying of transactions is an action in which trader, using one of the trading platforms, performs the reproduction of the operation on his personal account. Simply put, you take a trade of one of the top traders and transfer it to your personal account.</p>
+        <div class="tab-link">
+            <a class="link after" href="/en/trading-methods/copytrade/">Get now</a>
+        </div>
+    </div>
+</div>
+<div id="pamm" class="tabcontent">
+    <div class="animated fadeInRight">
+        <div class="tab-img">
+            <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/pamm.jpg">
+        </div>
+        <h3 class="tab-title">MAM Account</h3>
+        <p class="tab-desc">It is very profitable for investors to open a MAM Account, because they have a real opportunity to earn without making trading operations on their account and not studying the specifics of trades. MAM Account is also acceptable to the Manager, who is receiving the payment for performing operations on managing the Investor's accounts.</p>
+        <div class="tab-link">
+            <a class="link after" href="/en/trading-methods/mam-account/">Get now</a>
+        </div>
+    </div>
+</div>
+<div id="trustmanagment" class="tabcontent">
+    <div class="animated fadeInRight">
+        <div class="tab-img">
+            <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/doveritelnoe_upravlenie.jpg">
+        </div>
+        <h3 class="tab-title">Trust management</h3>
+        <p class="tab-desc">Trust management from Boxinvesting is a well-coordinated work of analysts and traders of the company with the client's account. Registering a trust management service, the client gets an opportunity to form investment strategy in partnership with a practicing trader Boxinvesting, determine the degree of possible risk and size of the potential profit. The individual service is available for Premium-clients of the company.</p>
+		<div class="tab-link">
+            <a class="link after" href="/en/trading-methods/mam-account/">Get now</a>
+        </div>
+    </div>
+</div>
+<div id="demo" class="tabcontent">
+    <div class="animated fadeInRight">
+        <div class="tab-img">
+            <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/demo.jpg">
+        </div>
+        <h3 class="tab-title"> Free Trial Account</h3>
+        <p class="tab-desc">You can use the  Free Trial Account service to learn the functionality of the trading platform if you are a beginner and are not ready to start active trading. Also, you can test the speed of orders’ execution and form a general idea of the trading process. The service is absolutely free.</p>
+		<div class="tab-link">
+            <a class="link after" href="/en/trading-methods/mam-account/">Get now</a>
+        </div>
+    </div>
+</div>
+
+
+<script data-cfasync="false" src=""></script><script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+  </section>
+</div>
+<!--<section class="land-sec2 section">
+	<div class="container">
+
+	</div>
+</section>-->
+<section class="land-sec3 section">
+	<div class="container">
+<!--     <div class=" col-lg-6 hidden-xs text-center">
+      <img class="land-sec3_img" src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/screen.png">
+    </div> -->
+    <div class="col-lg-6 col-lg-offset-6 col-xs-12">
+		<h1 class="platforms-title">Best <br> trading platform</h1>
+      <div class="platforms">
+		  <p class="platforms-subtitle">Terminal</p>
+		<p class="platforms-desc">The most reliable type of trading in securities and currency pairs. The software is directly on the trader's computer and protected by 3 levels of securitization. Transactions occur instantly and reliably.</p>
+        <ul class="platforms-list">
+          <li class="tab-link"><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/refresh.png"><a class="link after" href="https://boxinvesting.sirixtrader.com/" target="_blank" >Web platform</a></li>
+          <br>
+          <li class="tab-link"><a href="https://boxinvesting.sirixtrader.com/" target="_blank"><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/sirix_shadow.png" class="center-block img-activ8"></a></li>
+          <!--                   <li class="tab-link"><img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/apple.png"><a class="link after" href="/en/for-traders/platforms/">Mobile apps</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="land-sec4 section">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12">
+      <h3 class="land-sec4_title">Reliable result</h3>
+      <hr>
+      <p class="land-sec4_desc">Ten-year experience in the field of trading allowed us to succeed respectableresults on international trading platforms. The important accomplishments during this period are:</p>
+    </div>
+  </div>
+  <div class="row">
+   <div class="col-lg-4">
+    <div class="benefits-holder">
+     <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/achievement1.png">
+     <p class="benefits-holder_title">Nearly 18 000 <br> professional traders</p>
+     <p class="benefits-holder_desc">About 18 000 Boxinvesting customers became the professional market players with decent daily incomes.</p>
+   </div>
+ </div>
+ <div class="col-lg-4">
+  <div class="benefits-holder">
+   <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/achievement2.png">
+   <p class="benefits-holder_title">Over 1,000,000 <br> daily deals</p>
+   <p class="benefits-holder_desc">Boxinvesting customers commit a huge number of successful transactions, what makes them successful and wealthy traders.</p>
+ </div>
+</div>
+<div class="col-lg-4">
+  <div class="benefits-holder">
+   <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/achievement3.png">
+   <p class="benefits-holder_title">More than 63 000 <br> successful withdrawals of profit</p>
+   <p class="benefits-holder_desc">Boxinvesting reports all earnings to our customers on time and without delays taking into account commissions.</p>
+ </div>
+</div>
+</div>
+<div class="row">
+ <div class="col-lg-4">
+  <div class="benefits-holder">
+   <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/achievement4.png">
+   <p class="benefits-holder_title">356 managing portfolios with a volume <br> of more than $100 000</p>
+   <p class="benefits-holder_desc">Our 356 clients became owners of a solid financial portfolio with the successful investments in the international market.</p>
+ </div>
+</div>
+<div class="col-lg-4">
+  <div class="benefits-holder">
+   <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/achievement5.png">
+   <p class="benefits-holder_title">73&#37; of customers earn in <br> the first trading month</p>
+   <p class="benefits-holder_desc">More than two-thirds of our customers get the expected profit at the initial stage of conducting of trade operations with the help of Boxinvesting personal consultant.</p>
+ </div>
+</div>
+<div class="col-lg-4">
+  <div class="benefits-holder">
+   <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/achievement6.png">
+   <p class="benefits-holder_title">Over 1200 <br> of financial instruments</p>
+
+   <p class="benefits-holder_desc">Boxinvesting enables everyone to invest in preferred assets, for example, in currencies, stocks, indices, and cryptocurrencies. This provides great opportunities for getting a profit, due to more effective investment of funds.</p>
+ </div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+            <section class="payment-systems">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="https://boxinvest-bucket.s3.amazonaws.com/static/information/images/funeral_logo.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+<!-- <script src="scripts/background.js"></script> -->
+
+<%- include('partials/footer'); -%>

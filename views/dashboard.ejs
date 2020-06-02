@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="" />
+        <link rel="icon" type="image/png" href="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/img/favicon.ico" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Deposit gate</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <!--  Material Dashboard CSS    -->
+        <link href="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/css/material-dashboard.css" rel="stylesheet" />
+        <!-- Preloader CSS -->
+        <link href="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/css/preloader.css" rel="stylesheet">
+        <!-- File Uploader Css -->
+        <link rel="stylesheet" href="https://boxinvest-bucket.s3.amazonaws.com/static/ajaxuploader/css/fileuploader.css">
+        <!-- Custom CSS -->
+        <link href="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/css/dashboard.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+        <link href="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/css/style.css" rel="stylesheet">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- JQuery UI -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                                                                         crossorigin="anonymous"></script>
+        <!-- Bootstrap JS-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- File Uploader -->
+        <script src="https://boxinvest-bucket.s3.amazonaws.com/static/ajaxuploader/js/fileuploader.js"></script>
+        <script src="https://boxinvest-bucket.s3.amazonaws.com/static/file_form/file_form.js"></script>
+        <script src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/js/epg_validations.js"></script>
+        <!-- Form Media -->
+        
+        
+        
+    </head>
+
+    <body>
+       
+        <!-- /Yandex.Metrika counter -->
+
+        <div class="container preloader hide-preloader" id="loader">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="loader-wrapper">
+                        <div class="loading loading-1"></div>
+                        <p class="preloader-message">Wait, loading is in progress.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper" id="wrapper">
+            <div class="sidebar" data-active-color="rose" data-background-color="black" data-image="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/img/sidebar.jpg">
+                <!--
+                    Tip 1: You can change the color of active element of the sidebar using: data-active-color="purple | blue | green | orange | red | rose"
+                    Tip 2: you can also add an image using data-image tag
+                    Tip 3: you can change the color of the sidebar with data-background-color="white | black"
+                -->
+                <div class="logo">
+                    
+                    <a href="/" class="simple-text">
+                        <img src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/img/credo_logo1.svg" alt="" width="70%">
+                    </a>
+                    
+
+                </div>
+                <div class="logo logo-mini">
+                    
+                    <a href="/payment/deposit/mp/" class="simple-text">
+                        <img src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/img/credo_logo2.svg" alt="" width="64%">
+                    </a>
+                    
+                </div>
+
+                <div class="sidebar-wrapper">
+                    <div class="User">
+                        <!--
+                            <div class="photo">
+                            <img src="" />
+                            </div>
+                        -->
+                        <div class="info">
+                            
+                            <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                                 <h4>Current User</h4>
+                                <b class="caret"></b>
+                            </a>
+                            <div class="collapse" id="collapseExample">
+                                <ul class="nav">
+                                    <!-- Navbar menu for authenticated users. -->
+                                    
+                                    <li>
+                                        <a id="default" href="/dashboard/user/36160/">Personal info</a>
+                                    </li>
+                                    <li>
+                                        <a id="default" href="/dashboard/user/update/36160/">Update info</a>
+                                    </li>
+                                    <li>
+                                        <a id="default" href="/en/accounts/password/change/">Change password</a>
+                                    </li>
+                                    <li>
+                                        <a id="default" href="/dashboard/user/verification/36160/">Verify account</a>
+                                    </li>
+                                    
+                                    <!-- End of menu for authenticated users. -->
+
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <ul class="nav">
+
+                        <!-- Block Side Navbar -->
+                        
+
+                        
+                        <li class="">
+                            <a data-toggle="collapse" href="#transfers">
+                                <i class="fas fa-exchange-alt material-icon" aria-hidden="true"></i>
+                                <p>Transfers
+                                <b class="caret"></b>
+                                </p>
+                            </a>
+                            <div class="collapse" id="transfers">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="/payment/deposit/mp/">Deposit account</a>
+                                    </li>
+                                    <li>
+                                        <a href="/payment/all/user/">My deposits</a>
+                                    </li>
+                                    <li>
+                                        <a href="/payment/withdraw/36160/">Withdraw funds</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="btn-preloader" id="default" href="/dashboard/activities/36160/">
+                                <i class="fa fa-chart-area material-icon" aria-hidden="true"></i>
+                                <p>Actions</p></a>
+                        </li>
+                        <li>
+                            <a class="btn-preloader" id="default" href="/payment/trading/history/36160/">
+                                <i class="fa fa-history material-icon" aria-hidden="true"></i>
+                                <p>History of operations</p></a>
+                        </li>
+                        <li>
+                            <a id="default" href="/dashboard/metatrader/">
+                                <i class="fa fa-desktop material-icon" aria-hidden="true"></i>
+                                <p>Trading Platforms</p></a>
+                        </li>
+                        <li>
+                            <a id="default" href="/ipo/orders/36160/">
+                                <i class="fa fa-file-signature material-icon" aria-hidden="true"></i>
+                                <p>IPO Orders</p></a>
+                        </li>
+<!--                         <li>
+                            <a id="default" href="">
+                                <i class="fa fa-suitcase material-icon" aria-hidden="true"></i>
+                                <p>Investment Portfolios</p></a>
+                        </li> -->
+                        <li>
+                            <a id="default" href="/dashboard/contact/36160/">
+                                <i class="fa fa-envelope material-icon" aria-hidden="true"></i>
+                                <p>Contact Us</p></a>
+                        </li>
+                        <li>
+                            <a id="default" href="/dashboard/documents/">
+                                <i class="fa fa-file-alt material-icon" aria-hidden="true"></i>
+                                <p>Documents</p></a>
+                        </li>
+<!--                         <li>
+                            <a id="default" href="">
+                                <i class="fa fa-btc material-icon" aria-hidden="true"></i>
+                                <p>Boxmine</p>
+                            </a>
+                        </li> -->
+                        
+
+                        
+                        <!-- End Block Side Navbar -->
+
+                        <li>
+                            <a id="default" href="/logout/"><i class="fa fa-fw fa-sign-out-alt material-icon"></i><p>Log out</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-panel">
+                <nav class="navbar navbar-transparent navbar-absolute">
+                    <div class="container-fluid">
+                        <div class="navbar-minimize">
+                            <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+                                <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+                                <i class="material-icons visible-on-sidebar-mini">view_list</i>
+                            </button>
+                        </div>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!--<a class="navbar-brand" href="#">Profile</a>-->
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="/">To BoxInvesting website</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="material-icons">notifications</i>
+                                        <span class="notification">4</span>
+                                        <p class="hidden-lg hidden-md">
+                                        Notifications
+                                        <b class="caret"></b>
+                                        </p>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        
+                                        
+                                        <li>
+                                            <a href="">
+                                                
+                                                <i class="fa fa-check success" aria-hidden="true"></i>
+                                                
+                                                You have signed out.
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="">
+                                                
+                                                <i class="fa fa-check success" aria-hidden="true"></i>
+                                                
+                                                You have successfully signed up to BoxInvesting.
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="">
+                                                
+                                                <i class="fa fa-comment info" aria-hidden="true"></i>
+                                                
+                                                Please deposit your account for a minimum amount of $250 to access our services.
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="">
+                                                
+                                                <i class="fa fa-check success" aria-hidden="true"></i>
+                                                
+                                                Successfully signed in as <span class="__cf_email__" data-cfemail="8fe6fce3f5edf9e1eafee2f9f6e7e1fdfde8e8cffbfbe6fdf9a1e1eafba1">[email&#160;protected]</span>
+                                            </a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <li class="separator hidden-lg hidden-md"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="content">
+                    <div class="container-fluid">
+                        <!-- Start of a card -->
+                        
+                        
+
+                        
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-text" data-background-color="rose">
+        <h4 class="card-title">Deposit</h4>
+      </div>
+      <div class="card-content">
+
+        <!--Card content-->
+        <div class="row">
+          
+          <div class="col-sm-2">
+            <ul class="nav nav-pills nav-pills-icons nav-stacked" role="tablist">
+              <li class="active"><a href="/payment/deposit/mp/"><i class="material-icons">credit_card</i>Bank card</a></li>
+              
+              
+              <li class=""><a href="/payment/deposit/trading/bitcoin/36160/"><i class="fab fa-btc"></i>Bitcoin</a></li>
+              <li class=""><a href="/payment/deposit/wired/36160/"><i class="material-icons">account_balance</i>Bank wire transfer</a></li>
+              
+                <li class=""><a href="/payment/deposit/cc/"><i class="fa fa-coins"></i>APM - COIN</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-sm-10">
+            <div class="row">
+
+              <!-- <div class="col-sm-2 col-sm-offset-1">
+                <a href="/payment/deposit/fl/" class="payment-link"><img id='gate-1' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_1.png" alt="Gate 1"></a>
+              </div> -->
+              <div class="col-sm-2 col-sm-offset-2">
+                <a href="/payment/deposit/mp/" class="payment-link"><img id='gate-1' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_1.png" alt="Gate 1"></a>
+              </div>
+              <div class="col-sm-2">
+                <a href="/payment/deposit/br/" class="payment-link"><img id='gate-2' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_2.png" alt="Gate 2"></a>
+              </div>
+              <!-- <div class="col-sm-2">
+                <a href="/payment/deposit/cg/" class="payment-link"><img id='gate-2' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_2.png" alt="Gate 2"></a>
+              </div> -->
+<!--                <div class="col-sm-3">
+                  <a href="/payment/deposit/epg/" class="payment-link"><img id='gate-2' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_2.png" alt="Gate 2"></a>
+              </div> -->
+              <div class="col-sm-2">
+                <a href="/payment/deposit/payc/" class="payment-link"><img id='gate-3' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_3.png" alt="Gate 3"></a>
+              </div>
+              <!-- <div class="col-sm-2">
+                  <a href="/payment/deposit/bcm/" class="payment-link"><img id='gate-4' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_4.png" alt="Gate 4"></a>
+              </div> -->
+              <!-- <div class="col-sm-2">
+                  <a href="/payment/deposit/net/" class="payment-link"><img id='gate-5' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_5.png" alt="Gate 5"></a>
+              </div> -->
+              <!-- <div class="col-sm-2">
+                <a href="/payment/deposit/voucher/" class="payment-link"><img id='gate-4' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_4.png" alt="Gate 4"></a>
+              </div> -->
+
+              <!-- <div class="col-sm-2">
+                <a href="/payment/deposit/cc/" class="payment-link"><img id='gate-5' class="img-responsive" src="https://boxinvest-bucket.s3.amazonaws.com/static/payments/img/gate_5.png" alt="Gate 5"></a>
+              </div> -->
+            </div>
+            <!-- Payment gate template -->    
+            
+
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <form id="payment" name="form" class="form-horizontal payment-form" enctype="multipart/form-data" method="post">
+            <input type='hidden' name='csrfmiddlewaretoken' value='2Cjg0IRE6RMkrthHMVWxGyBZPyzw7u9IkhcXFyU7ZWzxFJ5xDttnuHL4LjiJnwDf' />
+            
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-3">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Amount</label>
+                        <input type="number" name="amount" required id="id_amount" class="form-control" step="0.01" />
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Tp account</label>
+                        <select name="tp_account" required id="id_tp_account" class="form-control">
+  <option value="" selected></option>
+
+</select>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <input class="btn-credo" type="submit" value="Submit" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+            <!-- End of payment gate template -->
+          </div>
+        </div>
+        <!-- End card -->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+                        
+                        
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <nav class="pull-left">
+                            <!-- Content -->
+                            <ul>
+                                <li>
+                                    <a href="/">
+                                        BoxInvesting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://boxinvest-bucket.s3.amazonaws.com/static/core/additional/TeamViewerQS.exe" download target="_blank">
+                                       Team Viewer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://boxinvest-bucket.s3.amazonaws.com/static/core/additional/Market-Analyzer.exe" download target="_blank">
+                                        CryptoMarket Analyzer Demo 
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+ 
+    </body>
+
+    <!--   Core JS Files   -->
+    <!-- JQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <!-- Bootstrap JS-->
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    <!-- jQuery validation Plugin -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/jquery.validate.min.js" type="text/javascript"></script>
+    <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/moment.min.js"></script>
+    <!-- Notify Plugin -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/bootstrap-notify.js" type="text/javascript"></script>
+    <!-- DateTimePicker Plugin -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/bootstrap-datetimepicker.js"></script>
+    <!-- Sweet Alert 2 plugin -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/sweetalert2.js"></script>
+    <!-- TagsInput Plugin -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/jquery.tagsinput.js"></script>
+    <!-- Name parser Plugin -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/vendors/parse-names.js"></script>
+    <!-- Material Dashboard -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/material.min.js" type="text/javascript"></script>
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/material-dashboard.js" type="text/javascript"></script>
+    <!-- Custom Dashboard, Preloader JS, Ajax comment submit -->
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/dashboard.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://boxinvest-bucket.s3.amazonaws.com/static/CACHE/js/65b1ccfaf4f6.js"></script>
+    <script src="https://boxinvest-bucket.s3.amazonaws.com/static/userprofile/js/preloader.js" type="text/javascript"></script>
+
+    <script>
+setFormValidation("#form");
+setFormValidation("#payment");
+    </script>
