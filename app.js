@@ -14,7 +14,6 @@ var express     = require("express"),
     methodOverride = require("method-override");
 
 //For https
-const https = require('https');
 var http = require('http');
 
 /**
